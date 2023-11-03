@@ -6,10 +6,10 @@ package com.example.rpgjjbo;
  * @author Jose J. Bailon Ortiz
  */
 public enum EnumClassType {
-    humano(R.string.humano,0),
-    elfo(R.string.elfo,1),
-    enano(R.string.enano,2),
-    orco(R.string.orco,3);
+    humano(R.string.humano,0,R.drawable.human),
+    elfo(R.string.elfo,1,R.drawable.elf),
+    enano(R.string.enano,2,R.drawable.dwarf),
+    orco(R.string.orco,3,R.drawable.orc);
 
     /**
      * Nombre de la clase
@@ -19,9 +19,21 @@ public enum EnumClassType {
      * Id de la clase
      */
     final int id;
-    EnumClassType(int nombre, int id) {
+
+    final int imagen;
+
+    /**
+     *
+     * @param nombre
+     * @param id
+
+     */
+    EnumClassType(int nombre, int id , int imagen) {
         this.nombre=nombre;
         this.id=id;
+        this.imagen=imagen;
+
+
     }
     public int getNombre(){
         return nombre;
@@ -29,5 +41,9 @@ public enum EnumClassType {
 
     public int getId() {
         return id;
+    }
+
+    public int getImagen() {
+        return imagen;
     }
 }

@@ -9,13 +9,15 @@
         android:id="@+id/imagenfondo"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:importantForAccessibility="no"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fondo2"
-        android:importantForAccessibility="no" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fondo2" />
 
     <TextView
         android:id="@+id/tituloSeccion"
@@ -33,63 +35,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/radioGroupClase"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="344dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/primario"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloSeccion">
 
-        <RadioButton
-            android:id="@+id/radioButtonHumano"
+        <Spinner
+            android:id="@+id/spinnerClases"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:fontFamily="@font/meat"
-            android:text="@string/humano"
-            android:textColor="@color/primario_light"
-            android:textSize="40sp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonElfo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:buttonTint="@color/primario_light"
-            android:fontFamily="@font/meat"
-            android:text="@string/elfo"
-            android:textColor="@color/primario_light"
-            android:textSize="40sp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonEnano"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:buttonTint="@color/primario_light"
-            android:fontFamily="@font/meat"
-            android:text="@string/enano"
-            android:textColor="@color/primario_light"
-            android:textSize="40sp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonOrco"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/primario_light"
-            android:fontFamily="@font/meat"
-            android:text="@string/orco"
-            android:textColor="@color/primario_light"
-            android:textSize="40sp" />
-    </RadioGroup>
+            android:layout_height="48dp"
+            android:backgroundTint="@color/primario_light"
+            android:popupBackground="@color/secundario" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tituloSeccion2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="32dp"
         android:background="#CC001926"
         android:fontFamily="@font/meat"
         android:padding="10dp"
@@ -97,20 +68,20 @@
         android:textAlignment="center"
         android:textColor="@color/primario_light"
         android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupGenero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroupClase" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
         android:id="@+id/radioGroupGenero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnRasgosContinuar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloSeccion2">
+        app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
             android:id="@+id/radioButtonMasculino"
@@ -152,11 +123,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ListView
-        android:id="@+id/listClasses"
-        android:layout_width="393dp"
-        android:layout_height="61dp"
+    <ImageView
+        android:id="@+id/imagenIcono"
+        android:layout_width="251dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="24dp"
+        app:tint="@color/primario_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="637dp" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/human" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
