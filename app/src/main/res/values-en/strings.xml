@@ -62,4 +62,9 @@
     <string name="crear_nuevo_personaje">Crearte new character</string>
     <string name="crear_nuevo">Create new</string>
     <string name="explicacion_caract_aleatoria">Tap the Roll Dices button to set up the stats.</string>
+    <string name="human_desc">Humans are gregarious and willing to mix and interact with others</string>
+    <string name="elf_desc">An elf is a creature that\'s said to be magical, and a little mischievous</string>
+    <string name="dwarf_desc">Are determined and loyal, true to their word and decisive in action</string>
+    <string name="orc_desc">Orcs are savage humanoids with green skin and a brutish appearance</string>
+    <string name="ataque">Atack</string>
 </resources>

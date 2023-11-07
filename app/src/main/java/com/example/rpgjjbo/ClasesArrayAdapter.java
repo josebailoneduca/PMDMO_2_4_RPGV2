@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -38,6 +40,14 @@ public class ClasesArrayAdapter extends ArrayAdapter<EnumClassType> {
         LayoutInflater inflador= LayoutInflater.from(context);
         View vFila = inflador.inflate(dropdownItemLayout,parent,false);
         ((TextView)vFila.findViewById(R.id.nombre)).setText(clases[position].getNombre());
+        ((ImageView) vFila.findViewById(R.id.imagenIcono)).setImageResource(clases[position].getImagen());
+        RatingBar rbVida=(RatingBar) vFila.findViewById(R.id.ratingSalud);
+        rbVida.setMax(5);
+        rbVida.setProgress(clases[position].getVida());
+        RatingBar rbFuerza=(RatingBar) vFila.findViewById(R.id.ratingAtaque);
+        rbFuerza.setMax(5);
+        rbFuerza.setProgress(clases[position].getFuerza());
+        ((TextView)vFila.findViewById(R.id.descripcion)).setText(clases[position].getDescripcion());
         return vFila;
     }
 

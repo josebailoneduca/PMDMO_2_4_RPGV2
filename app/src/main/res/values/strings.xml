@@ -59,4 +59,9 @@
     <string name="crear_nuevo_personaje">Crear nuevo personaje</string>
     <string name="crear_nuevo">Crear nuevo</string>
     <string name="explicacion_caract_aleatoria">Pulsa el botón de lanzar dados para ajustar las características.</string>
+    <string name="human_desc">Los humanos son gregarios y gustan de mezclarse e interactuar con otros</string>
+    <string name="elf_desc">Un elfo es una criatura que se dice que es mágica y un poco traviesa</string>
+    <string name="dwarf_desc">Son valientes y leales, fieles a su palabra y decididos en la acción</string>
+    <string name="orc_desc">Los orcos son humanoides salvajes con piel verde y apariencia brutal</string>
+    <string name="ataque">Ataque</string>
 </resources>
