@@ -66,5 +66,5 @@
     <string name="elf_desc">An elf is a creature that\'s said to be magical, and a little mischievous</string>
     <string name="dwarf_desc">Are determined and loyal, true to their word and decisive in action</string>
     <string name="orc_desc">Orcs are savage humanoids with green skin and a brutish appearance</string>
-    <string name="ataque">Atack</string>
+    <string name="ataque">Attack</string>
 </resources>

@@ -70,10 +70,13 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, Adap
         Spinner spinnerClases = findViewById(R.id.spinnerClases);
         ImageView iconoClase = findViewById(R.id.imagenIcono);
         //inicializacion de GUI
+        //definicion del spinner
         ClasesArrayAdapter adaptador = new ClasesArrayAdapter(this, R.layout.list_classes_item, EnumClassType.values());
         adaptador.setDropDownViewResource(R.layout.list_classes_item_dropdown);
         spinnerClases.setAdapter(adaptador);
+        //icono de clase
         iconoClase.setOnClickListener(view -> spinnerClases.performClick());
+        //radiobuttons de genero
         radioGroupGenero.clearCheck();
         btnClaseContinuar.setEnabled(false);
 

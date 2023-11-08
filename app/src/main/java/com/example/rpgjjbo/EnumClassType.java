@@ -20,17 +20,33 @@ public enum EnumClassType {
      */
     final int id;
 
+    /**
+     * imagen asociada a la clase
+     */
     final int imagen;
 
+    /**
+     * Descripcion de la clase
+     */
     final int descripcion;
+
+    /**
+     * Stat basico de vida de la clase
+     */
     final int vida;
+    /**
+     * Stat basico de fuerza de la clase
+     */
     final int fuerza;
 
     /**
      *
      * @param nombre
      * @param id
-
+     * @param imagen
+     * @param descripcion
+     * @param vida
+     * @param fuerza
      */
     EnumClassType(int nombre, int id , int imagen, int descripcion,int vida, int fuerza) {
         this.nombre=nombre;

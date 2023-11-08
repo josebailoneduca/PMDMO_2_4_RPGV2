@@ -12,6 +12,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+/**
+ * Clase adaptador para injectar los datos en un spinner selector de clase de personaje
+ *
+ * Necesita un texto con id nombre en el layout de seleccionado y
+ * para la vista del dropdown necesita:
+ * -dos textos uno id nombre y otro con id descripcion
+ * -una imagen id imagenIcono
+ * - dos rattingbars con id ratingAtaque y ratingSalud
+ *
+ */
 public class ClasesArrayAdapter extends ArrayAdapter<EnumClassType> {
     private int itemLayout;
 
